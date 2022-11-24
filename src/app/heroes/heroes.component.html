@@ -15,7 +15,11 @@
           <button class="action-item" (click)="onDelete(hero)">Delete</button>
       </clr-dg-action-overflow>
           <clr-dg-cell>{{hero.id}}</clr-dg-cell>
-          <clr-dg-cell>{{hero.name}}</clr-dg-cell>
+          <clr-dg-cell>
+            <a [routerLink]="['/detail', hero.id]">
+              {{hero.name}}
+            </a>
+          </clr-dg-cell>
       </clr-dg-row>
   
       <clr-dg-footer>{{heroes.length}} heroes</clr-dg-footer>
