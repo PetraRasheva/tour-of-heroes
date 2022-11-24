@@ -17,6 +17,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ClarityModule } from "@clr/angular";
+import { WizardComponent } from './wizard/wizard.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ClarityModule } from "@clr/angular";
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    WizardComponent
   ],
   imports: [
     BrowserAnimationsModule,
