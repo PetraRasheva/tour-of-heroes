@@ -15,6 +15,10 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ClarityModule } from "@clr/angular";
+import { WizardComponent } from './wizard/wizard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +27,12 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    WizardComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    ClarityModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
